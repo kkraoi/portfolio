@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/flip.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Aoi Takenaka</title>
+</head>
+<body onmousedown="return false;" oncontextmenu="return false;">
+  <header>
+    <nav class="sidenav hidden">
+      <ul>
+        <li class="nav-item"><a href="#sec0"><span class="o"></span>top</a></li>
+        <li class="nav-item"><a href="#sec1"><span class="o"></span>profile</a></li>
+        <li class="nav-item"><a href="#sec2"><span class="o"></span>status</a></li>
+        <li class="nav-item"><a href="#sec3"><span class="o"></span>works</a></li>
+        <li class="nav-item"><a href="#sec4"><span class="o"></span>practice</a></li>
+        <li class="nav-item"><a href="#sec5"><span class="o"></span>hobby</a></li>
+      </ul>
+      <div class="ham" id="hum">
+        <span class="ham_line1 ham_line"></span>
+        <span class="ham_line2 ham_line"></span>
+        <span class="ham_line3 ham_line"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="mask" class="hidden"></div>
+    <section class="mv content-box" id="sec0">
+      <h1>
+        <div class="tick" data-did-init="handleTickInit">
+            <div data-repeat="true" data-layout="horizontal fit" data-transform="upper -> split -> delay(random, 100, 150)">
+                <span data-view="flip" data-transform="ascii -> arrive -> round -> char(a-zA-Z)" class="tick-char"></span>
+            </div>
+        </div>
+      </h1>
+      <div class="ttl__item"></div>
+    </section>
+
+    <section class="profile content-box" id="sec1">
+      <div class="inner">
+        <div class="title__cover ttl__item">
+          <span class='title__line'></span>
+          <h2 class="title">profile</h2>
+        </div>
+        <div class="flex">
+          <div class="left">
+            <img src="img/prof__img00.png" alt="">
+            <svg
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="350px" height="350px">
+            <path fill-rule="evenodd"  fill="rgb(8, 85, 150)"
+             d="M-0.000,-0.000 L600.000,-0.000 L600.000,600.000 L-0.000,600.000 L-0.000,-0.000 Z"/>
+            </svg>
+          </div>
+          <div class="right">
+            <h2 class="prof__h2">竹中 碧<span>takenaka aoi</span></h2>
+            <div class="prof__block--1">
+              <time>1997.04.13</time>
+              <p>aaoooii0219@gmail.com</p>
+            </div>
+            <p class="prof__text">
+              1997年京都府北部生まれ。<br>
+              国立清水海上技術短期大学校を卒業後、東栄汽船株式会社に就職。<br>
+              船舶の機関・機器装置の保守管理に携わる。休暇中、美大生である友人に再開し在学時から秘めていた創作的職業への憧れがこみ上がり、たまらなくなりwebの道に進む。2020年3月にデジタルハリウッド大阪校の受講を修了し、現在自己学習＆就活の日々に励む。
+            </p>
+            <div class="prof__block--2">
+              <h3>自己PR</h3>
+              <p class="prof__text">
+                粘り強さは誰にも負けません。<br>
+                卒業制作のコーディング際、なかなか実現できないCSSがありました。ミスコードを探しても見つからない、検索をかけても当たらない…。焦燥感と投げ出したくなる気持ちが募る中、それでも諦めてなるものかという負けん気で最後までやり遂げることができました。与えられた業務が難問であっても奮闘し最後まで「できる」と信じて遂行することができます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="status content-box" id="sec2">
+      <div class="inner">
+        <div class="title__cover--right ttl__item">
+          <span class='title__line title--right'></span>
+          <h2 class="title title--right">status</h2>
+        </div>
+        <div class="content">
+            <div class="meter">
+              <h3 class="text">AI</h3>
+              <div class="base">
+                <span class="value--1 meter-value"></span>
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+              </div>
+            </div>
+            <div class="meter">
+              <h3 class="text">PS</h3>
+              <div class="base">
+                <span class="value--2 meter-value"></span>
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+              </div>
+            </div>
+            <div class="meter">
+              <h3 class="text">HTML</h3>
+              <div class="base">
+                <span class="value--3 meter-value"></span>
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+              </div>
+            </div>
+            <div class="meter">
+              <h3 class="text">CSS</h3>
+              <div class="base">
+                <span class="value--4 meter-value"></span>
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+              </div>
+            </div>
+            <div class="meter">
+              <h3 class="text">JS</h3>
+              <div class="base">
+                <span class="value--5 meter-value"></span>
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works content-box" id="sec3">
+      <div class="inner">
+        <div class="title__cover ttl__item">
+          <span class='title__line'></span>
+          <h2 class="title">works</h2>
+        </div>
+        <ul class="flex">
+          <li class="sec3--move">
+            <a href="https://mpkai.com/" target="_blank">
+              <div class="li__inner">
+                <span class="appear">実装中</span>
+                <img src="img/sec3/img1.png" alt="">
+                <h3>『晴明丘夏祭り』 地域イベントサイト</h3>
+                <p>大阪阿倍野区晴明丘地区の夏祭りのサイトです。子どもがメインのお祭りなのでポップでにぎやかな印象を出しています。一方で、伝統あるお祭りなので和風の渋さも念頭に入れバランスをとった色味にしています。また、メインビジュアルに工夫をこしらえ、スライド時に写真に覆われるような演出にしました。</p>
+              </div>
+            </a>
+          </li>
+          <li class="">
+            <div class="li__inner">
+              <img src="img/sec3/img2.png" alt="">
+              <h3>『スグ食べ』 宅配サービスサイト</h3>
+              <p>デジタルハリウッドのスクール課題サイトです。人生初のサイトのデザインをしました。デザインを生むことの苦しみと完成した時の喜びを味わいました。カルチャーショックでした。デザインを作る際、コーディングのことも十分に頭に入れないと完成に時間がかかり、非効率となることを反省点として得ました。</p>
+            </div>
+          </li>
+          <li class="">
+            <div class="li__inner">
+              <img src="img/sec3/img3.png" alt="">
+              <h3>『8hours』 衣類通販サイト</h3>
+              <p>デジタルハリウッドのスクール課題サイトです。ハンバーガーメニューやホバー時などのアニメーションCSSを当サイト制作で学習しました。この時動的な作用を習いながらも作ることができ、コーディングの楽しみを感じることができました。</p>
+            </div>
+          </li>
+          <li class="">
+            <div class="li__inner">
+              <img src="img/sec3/img4.png" alt="">
+              <h3>『RCUデザイン』 アプリ宣伝サイト</h3>
+              <p>ジタルハリウッドのスクール課題サイトです。cssを本格的に学ぶことの始まりとなったサイトです。positionやback-ground-imagesの習得が当時は大変でしたがその分反作用的に追究に励んだため何とかのりこえることができました。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-box" id="sec4">
+      <div class="inner">
+        <div class="title__cover--right ttl__item">
+          <span class='title__line title--right'></span>
+          <h2 class="title title--right">practice</h2>
+        </div>
+        <p class="sec4__cmt">日々励んでいる練習の中の模写の成果物を掲載いたします。</p>
+        <div class="flex">
+          <div class="sec4-frame__container">
+            <div class="sec4__frame">
+              <img src="img/sec4/img1.png" alt="">
+            </div>
+            <p class="mosyha">模写</p>
+          </div>
+          <div class="tab__container">
+            <ul class="tab__menu">
+              <li><a href="tab" class="tab--active" data-id="html--1">HTML</a></li>
+              <li><a href="tab" data-id="css--1">CSS</a></li>
+              <!-- <li><a href="tab" data-id="js--1">JS</a></li> -->
+            </ul>
+            <section class="tab__content tab--active" id="html--1">
+              <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+&lt;link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="css/reset.css"&gt;
+&lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;title&gt;鶴弥の防災瓦なら地震も台風も怖くない。&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+  &lt;h1&gt;&lt;img src="images/header/logo.png" alt="鶴弥"&gt;&lt;/h1&gt;
+&lt;/header&gt;
+&lt;div class="main-visual"&gt;
+  &lt;p class="mv"&gt;&lt;img src="images/header/mainImg-pc.png" alt=""&gt;&lt;
+  /p&gt;
+&lt;/div&gt;
+&lt;div class="body-inner"&gt;
+  &lt;div class="mv-section"&gt;
+    &lt;h2&gt;&lt;img src="images/header/hd_index_001-pc.png" alt=""&gt;&lt;
+    /h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h3&gt;耐久性編&lt;/h3&gt;
+        &lt;div class="pray"&gt;
+          &lt;p&gt;動画&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h3&gt;防災性編&lt;/h3&gt;
+        &lt;div class="pray"&gt;
+          &lt;p&gt;動画&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p class="mv-text"&gt;日本の屋根といえば「瓦」。でも最近は「地震に弱い」
+    という誤解の声がちらほら…。&lt;br&gt;そんな今こそ、進化した瓦「防災瓦」がオススメです。&lt;br&gt;熊本地震の調査結果によると、以前の瓦の屋根にはたくさんのズレ・
+    脱落が見つかりましたが、「防災瓦」の屋根にはほとんど被害が見当たりませんでした。
+    &lt;br&gt;では、防災瓦は一体何が違うのか…。そのヒミツ、お教えします！&lt;/p&gt;
+    &lt;div class="btn-list-wrapper"&gt;
+      &lt;ul class="btn-list"&gt;
+        &lt;li&gt;
+          &lt;a href="#" class="btn"&gt;&lt;i class="fas fa-chevron-right arow"&gt;&lt;/i&gt;鶴弥コーポレートサイトへ&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href="#" class="btn "&gt;&lt;i class="fas fa-chevron-right arow"&gt;&lt;/i&gt;資料請求&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+
+&lt;section class="section1"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;img src="images/section1/img_index_001-pc.png" alt=""&gt;
+      &lt;p class="section1-text"&gt;以前の土葺き工法のように重い土を使わず、屋根重量を約半分程度に軽量化しました。&lt;/p&gt;
+    &lt;/li&gt;
+              </pre>
+            </section>
+            <section class="tab__content" id="css--1">
+              <pre>
+/* box */
+.box{
+  border: 4px solid #b5c9b0;
+  border-radius: 20px;
+  background-color: #fff;
+  background-size: 12px 12px;
+  background-image: radial-gradient(#e6e6e6 22%, transparent 22%),
+  radial-gradient(#e6e6e6 22%, transparent 22%);
+  background-position: 0 0, 6px 6px;
+}
+/* /box */
+
+
+
+/* header */
+header{
+  padding-top: 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.mv-section h2{
+  margin-bottom: 40px;
+}
+.mv-section h3{
+  font-size: 2.4rem;
+}
+.mv-section ul{
+  margin-bottom: 75px;
+}
+.mv-section li{
+  flex: 48%;
+}
+.mv-section h3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pray{
+  width: 95%;
+  max-height: 262px;
+  background-color: #444;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 262px;
+  text-align: center;
+  margin: 0 auto;
+}
+.mv-text {
+  line-height: 1.85;
+  margin-bottom: 60px;
+}
+/* /header */
+
+/* section1 */
+.section1{
+  margin-bottom: 75px;
+}
+.section1 li{
+  flex: 33%;
+  padding: 0 10px;
+}
+.section1-text{
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+    /* /section1 */
+              </pre>
+            </section>
+            <!-- <section class="tab__content" id="js--1">
+              <pre>
+
+              </pre>
+            </section> -->
+          </div>
+          <!-- <div class="tab__container">
+            <ul class="tab__menu">
+              <li><a href="tab" class="tab--active" data-id="html--1">HTML</a></li>
+              <li><a href="tab" data-id="css--1">CSS</a></li>
+              <li><a href="tab" data-id="js--1">JS</a></li>
+            </ul>
+            <section class="tab__content tab--active" id="html--1">a</section>
+            <section class="tab__content" id="css--1"></section>
+            <section class="tab__content" id="js--1"></section>
+          </div> -->
+        </div>  <!-- /flex -->
+
+        <div class="flex flex--wrap">
+          <div class="sec4__frame--js">
+            <iframe src="js__works/stop-watch/index.html" width="45%" height="300px"></iframe>
+            <h4>Stop Watch</4h>
+          </div>
+          <div class="sec4__frame--js">
+            <iframe src="js__works/omikuji/index.html" width="45%" height="300px"></iframe>
+            <h4>おみくじ</4h>
+          </div>
+          <div class="sec4__frame--js">
+            <iframe src="js__works/slot/index.html" width="45%" height="300px"></iframe>
+            <h4>Slot Machine</4h>
+          </div>
+          <div class="sec4__frame--js">
+            <iframe src="js__works/typing/index.html" width="45%" height="300px"></iframe>
+            <h4>Typing Game</4h>
+          </div>
+          <div class="sec4__frame--js size--ex">
+            <iframe src="js__works/parallax/index.html" width="45%" height="300px"></iframe>
+            <h4>Parallax</4h>
+          </div>
+          <div class="sec4__frame--js">
+            <iframe src="js__works/modal-window/index.html" width="45%" height="300px"></iframe>
+            <h4>Modal Window</4h>
+          </div>
+          <div class="sec4__frame--js">
+            <iframe src="js__works/3quiz/index.html" width="45%" height="300px"></iframe>
+            <h4>Quiz</4h>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="hobby content-box" id="sec5">
+      <div class="inner">
+        <div class="title__cover ttl__item">
+          <span class='title__line'></span>
+          <h2 class="title">hobby</h2>
+        </div>
+        <p class="sec5__cmt">趣味で描いている絵を紹介します。</p>
+        <div class="sec5__content">
+          <div class="slide__container">
+            <div class="sec5__left">
+              <img alt="" id="slideMain">
+              <nav class="slide__nav">
+                <ul>
+                  <li id="play">Play</li>
+                  <li id="prev">&lt;</li>
+                  <li id="next">&gt;</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="sec5__right">
+              <ul class="thumbnails">
+                <!-- <li class="sec5--current"><img src="img/sec5/img01.jpg" alt=""></li>
+                <li><img src="img/sec5/img02.jpg" alt=""></li>
+                <li><img src="img/sec5/img03.jpg" alt=""></li>
+                <li><img src="img/sec5/img00.jpg" alt=""></li>
+                <li><img src="img/sec5/img00.jpg" alt=""></li>
+                <li><img src="img/sec5/img00.jpg" alt=""></li>
+                <li><img src="img/sec5/img00.jpg" alt=""></li>
+                <li><img src="img/sec5/img00.jpg" alt=""></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/flip.min.js"></script>
+  <script>
+  function handleTickInit(tick) {
+      var rotation = [
+          'PORTPOLIO   ',
+          'BY          ',
+          'AOI TAKENAKA'
+      ];
+      var index = 0;
+      Tick.helper.interval(function(){
+          tick.value = rotation[index];
+          index = index < rotation.length - 1 ? index + 1 : 0;
+      }, 5800);
+  }
+  </script>
+</body>
+</html>

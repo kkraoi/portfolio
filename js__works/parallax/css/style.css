@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 3000px;
+}
+.box{
+  padding: 0;
+  margin: 0;
+  height: 340px;
+}
+#bg0{
+  background-image: url(../img/pic00.png);
+  background-repeat: no-repeat;
+}
+#bg1{
+  background-image: url(../img/pic01.png);
+  background-repeat: no-repeat;
+}
+#bg2{
+  background-image: url(../img/pic02.png);
+  background-repeat: no-repeat;
+}
+#bg3{
+  background-image: url(../img/pic03.png);
+  background-repeat: no-repeat;
+}
+#msg{
+  font-size: 48px;
+  font-weight: 700;
+  font-family: Verdana, Arial, sans-serif;
+  color: orange;
+  opacity: 0;
+  position: fixed;
+}
