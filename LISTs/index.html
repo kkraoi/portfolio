@@ -32,17 +32,17 @@
           </ul>
           <p v-if="items.length === 0">nothing item</p>
           <!--　入力 -->
-          <form v-if="titleAddMode === 1"  @submit.prevent="saveTitel">
+          <form v-if="titleAddMode === true"  @submit.prevent="saveTitel">
             <input type="text" placeholder="add title name" v-model="newTitle">
             <input type="submit" value="Add Title" class="submit">
           </form>
-          <form v-if="titleAddMode === 0"  @submit.prevent="saveItem">
+          <form v-if="titleAddMode === false"  @submit.prevent="saveItem">
             <input type="text" placeholder="item name" v-model="newItem">
             <input type="submit" value="Add Item" class="submit">
           </form>
           <!--　/入力 -->
 
-          <span class="btn-changeTitle__wrapper"><button v-if="titleAddMode === 0" @click="changeTitle" class="btn-changeTitle">Title Change</button></span>
+          <span class="btn-changeTitle__wrapper"><button v-if="titleAddMode === false" @click="changeTitle" class="btn-changeTitle">Title Change</button></span>
         </div>
       </div>
     </div>

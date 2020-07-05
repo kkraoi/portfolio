@@ -1,10 +1,10 @@
 (function(){
   'use strict';
 
-  new Vue({
+  let vm = new Vue({
     el: "#app",
     data: {
-      titleAddMode: 1,
+      titleAddMode: true,
       title: 'title',
       newTitle: '',
       newItem: '',
@@ -25,14 +25,14 @@
         deep: true
       },
       titleAddMode: function(){
-        localStorage.setItem('titleAddMode', JSON.stringify(this.titleAddMode));
+        localStorage.setItem('titleAddMode', JSON.stringify(this.titleAddMode)) || [];
       }
     },
 
     mounted: function(){
-      this.items = JSON.parse(localStorage.getItem('items'));
-      this.title = JSON.parse(localStorage.getItem('title'));
-      this.titleAddMode = JSON.parse(localStorage.getItem('titleAddMode'));
+      this.items = JSON.parse(localStorage.getItem('items')) || [];
+      this.title = JSON.parse(localStorage.getItem('title')) || 'title';
+      this.titleAddMode = JSON.parse(localStorage.getItem('titleAddMode')) || false;
     },
 
     methods: {
@@ -40,7 +40,7 @@
         this.title = this.newTitle;
         this.newTitle = '';
         // this.state.replace('titleAddMode','itemAddMode');
-        this.titleAddMode = 0;
+        this.titleAddMode = false;
       },
       saveItem: function(){
         let item = {
@@ -62,7 +62,7 @@
         this.items = this.remaining;
       },
       changeTitle: function(){
-        this.titleAddMode = 1;
+        this.titleAddMode = true;
       }
     },
 

@@ -232,6 +232,7 @@ h2 > button,
 
 .btn-changeTitle{
   width: 120px;
+  float: left;
 }
 
 .btn-changeTitle__wrapper::after{
