@@ -1,0 +1,312 @@
+body{
+  background: #951ce8;
+  font-family: 'Yu Gothic UI',sans-serif;
+  color: #951ce8;
+}
+
+h1{
+  float: right;
+  position: relative;
+  font-size: 80px;
+  max-width: none;
+  margin-top: -44px;
+  padding-bottom: 60px;
+}
+
+.h1__wrapper::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+h1::before{
+  content: attr(data-inverted);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 44px;
+  color: #fff;
+  overflow: hidden;
+}
+
+h2{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.container{
+  background: #fff;
+  margin: 80px 0 0 200px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.inner{
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.contens__wrapper{
+  margin-left: 4px;
+}
+
+#app li > label{
+   white-space: pre-line;
+   word-wrap: break-word;
+}
+
+#app li > label.done{
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+li{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#app li{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+
+/* ----------------------
+delete-btn style
+------------------------- */
+.delete-btn{
+  position: relative;
+  margin-left: 35px;
+  height: 20px;
+  width: 20px;
+  background: #f89174;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.delete-btn.onDelete{
+  animation: ripple .75s ease-out 1;
+}
+
+.delete-btn::before{
+  display: inline-block;
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 13px;
+  background: #fff;
+  top: 9px;
+  left: 3px;
+  transform: rotate(45deg);
+}
+
+.delete-btn::after{
+  display: inline-block;
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 13px;
+  background: #fff;
+  top: 9px;
+  left: 3px;
+  transform: rotate(-45deg);
+}
+
+@keyframes ripple {
+  from{
+    opacity: 1;
+  }
+  to{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+/* ----------------------
+/delete-btn style
+------------------------- */
+
+
+/* ----------------------
+-----checkbox style------
+------------------------- */
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type="checkbox"] + label:last-child{
+  margin-bottom: 0;
+}
+
+input[type="checkbox"] + label::before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #951ce8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .15s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label::before{
+  content: '';
+  width: 10px;
+  border-radius: 0;
+  position: absolute;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+  top: -5px;
+  left: 5px;
+}
+
+/* ----------------------
+-----/checkbox style------
+------------------------- */
+
+
+/* ----------------------
+input-text style
+------------------------- */
+input[type="text"]{
+  height: 30px;
+  width: 82%;
+  border: 1px solid #951ce8;
+  color: #951ce8;
+}
+
+input[type="text"]:focus,
+input[type="submit"]:focus{
+  outline: none;
+}
+
+input::placeholder{
+  color: #951ce8;
+}
+/* ----------------------
+/input-text style
+------------------------- */
+
+
+/* ----------------------
+input-text style
+------------------------- */
+form{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+input[type="submit"],
+h2 > button,
+.btn-changeTitle{
+  height: 30px;
+  width: 80px;
+  background: #951ce8;
+  color: #fff;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #333;
+  transition: .3s;
+  float: right;
+  margin-right: 4px;
+}
+
+.btn-changeTitle{
+  width: 120px;
+}
+
+.btn-changeTitle__wrapper::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+input[type="submit"]:hover,
+h2 > button:hover,
+.btn-changeTitle:hover{
+  box-shadow: none;
+  transform: translate3d(4px, 4px, 0);
+}
+
+/* input[type="submit"].addSubmit{
+  animation: ripple .75s ease-out;
+} */
+
+/* .submit__wrapper{
+  position: relative;
+  overflow: hidden;
+} */
+
+/* .ripple__effect{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  pointer-events: none;
+  transform: scale(0);
+  opacity: 0;
+} */
+
+/* input[type="submit"]::before{
+  display: block;
+  content: "sss";
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-right: 1px solid #951ce8;
+  border-bottom: 1px solid #951ce8;
+} */
+/* ----------------------
+/input-submit style
+------------------------- */
+
+
+@media screen and (max-width: 674px) {
+
+  h1{
+    font-size: 60px;
+    margin-top: -34px;
+    padding-bottom: 40px;
+  }
+
+  h1::before{
+    height: 34px;
+  }
+
+  h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container{
+    margin: 60px 0 0 20px;
+  }
+
+  .inner{
+    margin: none;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}

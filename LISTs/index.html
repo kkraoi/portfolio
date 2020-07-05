@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="inner">
+      <span class="h1__wrapper">
+        <h1 data-inverted="LISTs">LISTs<span>.</span></h1>
+      </span>
+
+      <div id="app">
+        <h2>
+          {{ title }}
+          <span>({{ remaining.length }}/{{ items.length }})</span>
+          <button @click="purge">Purge</button>
+        </h2>
+
+        <div class="contens__wrapper">
+          <ul>
+            <li v-for="(item, index) in items">
+              <input type="checkbox" v-model="item.isDone" v-bind:id="'item' + index">
+              <label v-bind:class="{done: item.isDone}" v-bind:for="'item' + index">{{ item.title }}</label>
+              <span @click="deleteItem(index)" class="delete-btn" v-bind:class="{ onDelete: this.delete}"></span>
+            </li>
+          </ul>
+          <p v-if="items.length === 0">nothing item</p>
+          <!--　入力 -->
+          <form v-if="titleAddMode === 1"  @submit.prevent="saveTitel">
+            <input type="text" placeholder="add title name" v-model="newTitle">
+            <input type="submit" value="Add Title" class="submit">
+          </form>
+          <form v-if="titleAddMode === 0"  @submit.prevent="saveItem">
+            <input type="text" placeholder="item name" v-model="newItem">
+            <input type="submit" value="Add Item" class="submit">
+          </form>
+          <!--　/入力 -->
+
+          <span class="btn-changeTitle__wrapper"><button v-if="titleAddMode === 0" @click="changeTitle" class="btn-changeTitle">Title Change</button></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/vue-main.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
